@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logoEmpresaNav">
+                <a href="../index.html"><img src="../multimedia/image-removebg-preview.png" alt=""></a>
+                <a href="../index.html"><p>Hospital Cullen</p></a>
+            </div>
+            <div class="botonesNav">
+                <a href="./solicitarturno.html">Solicitar turno</a>
+                <a href="">Ver turnos</a>
+                <a href="">Profesionales</a>
+                <a href="">Usuarios</a>
+                <a href=""><img src="./multimedia/icons8-logout-50.png" alt=""></a>
+            </div>
+        </nav>
+        <div class="tituloHeaderSolicitarTurno">
+            <h1>Solicitar turno</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="solicitarTurno">
+        <div class="datosPaciente">
+            <div class="tituloDatosPaciente">
+                <h2>Datos:</h2>
+            </div>
+                <form id="formulario">
+                        <!-- DATOS -->
+                    <div class="datosFormulario">
+                        <div class="nombrePaciente">
+                            <p>Nombre:</p>
+                            <div class="field">
+                                <input type="text" name="nombre" required id="nombreForm">
+                            </div>
+                        </div>
+                        <div class="apellidoPaciente">
+                            <p>Apellido:</p>
+                            <div class="field">
+                                <input type="text" name="apellido" required id="apellidoForm">
+                            </div>
+                        </div>
+                        <div class="documentoPaciente">
+                            <p>Documento:</p>
+                            <div class="field">
+                                <input type="text" name="documento" required id="documentoForm">
+                            </div>
+                        </div>
+                        <div class="emailPaciente">
+                            <p>Email:</p>
+                            <div class="field">
+                                <input type="email" name="email" required id="emailForm">
+                            </div>
+                        </div>
+                        <div class="direccionPaciente">
+                            <p>Direccion:</p>
+                            <div class="field">
+                                <input type="text" name="direccion" required id="direccionForm">
+                            </div>
+                        </div>
+                        <div class="telefonoPaciente">
+                            <p>Telefono:</p>
+                            <div class="field">
+                                <input type="tel" name="numero" required id="numeroForm">
+                            </div>
+                        </div>
+                        <div class="nacimientoPaciente">
+                            <p>Fecha de nacimiento:</p>
+                            <div class="field">
+                                <input type="date" name="nacimiento" required id="nacimientoForm">
+                            </div>
+                        </div>
+                        <div class="obrasocialPaciente">
+                            <p>Obra social o particular:</p>
+                            <div class="field">
+                                <input type="text" name="obrasocial" required id="obrasocialForm">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- TURNO -->
+                    
+                    <div class="tituloTurnoPaciente">
+                        <h2>Turno:</h2>
+                    </div>
+                    <div class="turnoFormulario">
+                        <div class="servicioPaciente">
+                            <p>Servicio:</p>
+                            <div class="field">
+                                <input type="text" name="servicio" required id="servicioForm">
+                            </div>
+                        </div>
+                        <div class="horarioPaciente">
+                            <p>Horario:</p>
+                            <div class="field">
+                                <input type="text" name="horario" required id="horarioForm">
+                            </div>
+                        </div>
+                        <div class="abonadoPaciente">
+                            <p>Abonado:</p>
+                            <div class="field">
+                                <input type="text" name="abonado" required id="abonadoForm">
+                            </div>
+                        </div>
+                        <div class="metpagoPaciente">
+                            <p>Metodo de pago:</p>
+                            <div class="field">
+                                <input type="text" name="metpago" required id="metpagoForm">
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- BUTTONS -->
+                        <div class="botonesFormulario">
+                            <div class="botonGuardar">
+                                <button type="button" onclick="guardarPaciente()">
+                                    <span class="button_top"> Guardar
+                                    </span>
+                                  </button>
+                            </div>
+                            <div class="botonEliminar">
+                                <button>
+                                    <span class="button_top"> Eliminar
+                                    </span>
+                                  </button>
+                            </div>
+                            
+                        </div>
+                </form>
+        </div>
+    </section>
+    </main>
+
+    <script src="../main.js"></script>
+</body>
+</html>

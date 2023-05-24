@@ -1,0 +1,32 @@
+header{
+    .tituloHeader{
+        display: flex;
+        align-items: center;
+        background-image: url(../multimedia/image1.png);
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        h1{
+            font-family: gothamMedium;
+            font-size: 90px;
+            padding: 50px;
+        }
+    }
+    .lineaDivisor{
+        height: 10px;
+        background-color: #FFC107;
+    }
+    .tituloHeaderSolicitarTurno{
+        height: 110px;
+        background-color: #A6A6A6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 60px;
+            font-family: gothamMedium;
+        }
+    }
+}
+
+

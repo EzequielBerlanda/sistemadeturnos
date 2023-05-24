@@ -1,0 +1,44 @@
+nav{
+background-color: #FFC107;
+height: 83px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding-left: 42px;
+padding-right: 42px;
+align-items: center;
+text-decoration: none;
+a{
+    text-decoration: none;
+}
+    .logoEmpresaNav{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        img{
+            width: 70px;
+            height: 70px;
+        }
+        p{
+            color: #684F03;
+            font-size: 4.2vh;
+        }
+    }
+    .botonesNav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 56px;
+        text-decoration: none;
+        a{
+            color: #17191E;
+            font-size: 2.1vh;
+            text-decoration: none;
+            img{
+                width: 25px;
+                height: auto;
+            }
+        }
+}
+}
