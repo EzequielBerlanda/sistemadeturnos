@@ -19,7 +19,7 @@
                 <a href="">Ver turnos</a>
                 <a href="">Profesionales</a>
                 <a href="">Usuarios</a>
-                <a href=""><img src="./multimedia/icons8-logout-50.png" alt=""></a>
+                <a href=""><img src="../multimedia/icons8-logout-50.png" alt=""></a>
             </div>
         </nav>
         <div class="tituloHeaderSolicitarTurno">
@@ -30,69 +30,76 @@
     <main>
         <section class="solicitarTurno">
         <div class="datosPaciente">
-            <div class="tituloDatosPaciente">
-                <h2>Datos:</h2>
-            </div>
+            
                 <form id="formulario">
                         <!-- DATOS -->
+                        
                     <div class="datosFormulario">
-                        <div class="nombrePaciente">
-                            <p>Nombre:</p>
-                            <div class="field">
-                                <input type="text" name="nombre" required id="nombreForm">
+                        <div class="tituloDatosPaciente">
+                            <h2>Datos:</h2>
+                        </div>
+                        <div class="todosLosInputsPaciente">
+                            <div class="nombrePaciente">
+                                <p>Nombre:</p>
+                                <div class="field">
+                                    <input type="text" name="nombre" required id="nombreForm">
+                                </div>
+                            </div>
+                            <div class="apellidoPaciente">
+                                <p>Apellido:</p>
+                                <div class="field">
+                                    <input type="text" name="apellido" required id="apellidoForm">
+                                </div>
+                            </div>
+                            <div class="documentoPaciente">
+                                <p>Documento:</p>
+                                <div class="field">
+                                    <input type="text" name="documento" required id="documentoForm">
+                                </div>
+                            </div>
+                            <div class="emailPaciente">
+                                <p>Email:</p>
+                                <div class="field">
+                                    <input type="email" name="email" required id="emailForm">
+                                </div>
+                            </div>
+                            <div class="direccionPaciente">
+                                <p>Direccion:</p>
+                                <div class="field">
+                                    <input type="text" name="direccion" required id="direccionForm">
+                                </div>
+                            </div>
+                            <div class="telefonoPaciente">
+                                <p>Telefono:</p>
+                                <div class="field">
+                                    <input type="tel" name="numero" required id="numeroForm">
+                                </div>
+                            </div>
+                            <div class="nacimientoPaciente">
+                                <p>Fecha de nacimiento:</p>
+                                <div class="field">
+                                    <input type="date" name="nacimiento" required id="nacimientoForm">
+                                </div>
+                            </div>
+                            <div class="obrasocialPaciente">
+                                <p>Obra social o particular:</p>
+                                <div class="field">
+                                    <input type="text" name="obrasocial" required id="obrasocialForm">
+                                </div>
                             </div>
                         </div>
-                        <div class="apellidoPaciente">
-                            <p>Apellido:</p>
-                            <div class="field">
-                                <input type="text" name="apellido" required id="apellidoForm">
-                            </div>
-                        </div>
-                        <div class="documentoPaciente">
-                            <p>Documento:</p>
-                            <div class="field">
-                                <input type="text" name="documento" required id="documentoForm">
-                            </div>
-                        </div>
-                        <div class="emailPaciente">
-                            <p>Email:</p>
-                            <div class="field">
-                                <input type="email" name="email" required id="emailForm">
-                            </div>
-                        </div>
-                        <div class="direccionPaciente">
-                            <p>Direccion:</p>
-                            <div class="field">
-                                <input type="text" name="direccion" required id="direccionForm">
-                            </div>
-                        </div>
-                        <div class="telefonoPaciente">
-                            <p>Telefono:</p>
-                            <div class="field">
-                                <input type="tel" name="numero" required id="numeroForm">
-                            </div>
-                        </div>
-                        <div class="nacimientoPaciente">
-                            <p>Fecha de nacimiento:</p>
-                            <div class="field">
-                                <input type="date" name="nacimiento" required id="nacimientoForm">
-                            </div>
-                        </div>
-                        <div class="obrasocialPaciente">
-                            <p>Obra social o particular:</p>
-                            <div class="field">
-                                <input type="text" name="obrasocial" required id="obrasocialForm">
-                            </div>
-                        </div>
+                        
                     </div>
                     
                     <!-- TURNO -->
                     
-                    <div class="tituloTurnoPaciente">
-                        <h2>Turno:</h2>
-                    </div>
+                    
                     <div class="turnoFormulario">
-                        <div class="servicioPaciente">
+                        <div class="tituloTurnoPaciente">
+                            <h2>Turno:</h2>
+                        </div>
+                        <div class="todosLosInputsTurno">
+                            <div class="servicioPaciente">
                             <p>Servicio:</p>
                             <div class="field">
                                 <input type="text" name="servicio" required id="servicioForm">
@@ -115,26 +122,27 @@
                             <div class="field">
                                 <input type="text" name="metpago" required id="metpagoForm">
                             </div>
-                        </div>
+                        </div></div>
+                        
                     </div>
 
-                        <!-- BUTTONS -->
-                        <div class="botonesFormulario">
-                            <div class="botonGuardar">
-                                <button type="button" onclick="guardarPaciente()">
-                                    <span class="button_top"> Guardar
-                                    </span>
-                                  </button>
-                            </div>
-                            <div class="botonEliminar">
-                                <button>
-                                    <span class="button_top"> Eliminar
-                                    </span>
-                                  </button>
-                            </div>
-                            
-                        </div>
                 </form>
+                 <!-- BUTTONS -->
+                 <div class="botonesFormulario">
+                    <div class="botonGuardar">
+                        <button type="button" onclick="guardarPaciente()">
+                            <span class="button_top"> Guardar
+                            </span>
+                          </button>
+                    </div>
+                    <div class="botonEliminar">
+                        <button>
+                            <span class="button_top"> Eliminar
+                            </span>
+                          </button>
+                    </div>
+                    
+                </div>
         </div>
     </section>
     </main>

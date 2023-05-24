@@ -36,140 +36,148 @@ main{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 116px;
+        padding: 50px;
         .tituloDatosPaciente{
             display: flex;
             align-self: start;
            h2{
-            font-size: 40px;
+            font-size: 20px;
             font-family: gothamMedium;
            }
         }
         #formulario{
-            .datosFormulario{
+            display: flex;
+            flex-direction: row;
+            gap: 5rem;
+            .todosLosInputsPaciente{
             display: grid;
             grid-template-columns: repeat(2,4fr);
             gap: 40px;
             p{
-                font-size: 25px;
+                font-size: 16px;
                 color: #A6A6A6;
                 margin: 2px;
             }
             .field{
                 input{
                     background-color: #D9D9D9;
-                    width: 22vw;
-                    height: 3vw;
+                    width: 18vw;
+                    height: 2vw;
                     border: none;
                     border-radius: 10px;
-                    font-size: 30px;
+                    font-size: 16px;
                 }
             }
         }
         .turnoFormulario{
-            display: grid;
-            grid-template-columns: repeat(2,4fr);
-            gap: 40px;
+            display: flex;
+            flex-direction: column;
             p{
-                font-size: 25px;
+                font-size: 16px;
                 color: #A6A6A6;
                 margin: 2px;
             }
             .field{
                 input{
                     background-color: #D9D9D9;
-                    width: 22vw;
-                    height: 3vw;
+                    width: 18vw;
+                    height: 2vw;
                     border: none;
                     border-radius: 10px;
-                    font-size: 30px;
+                    font-size: 16px;
                 }
             }
+        }
+        .todosLosInputsTurno{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
         }
         .tituloTurnoPaciente{
             display: flex;
             align-self: start;
-            padding-top: 97px;
            h2{
-            font-size: 40px;
+            font-size: 20px;
             font-family: gothamMedium;
            }
         }
-        .botonesFormulario{
-            display: flex;
-            flex-direction: row;
-            justify-content: end;
-            padding-top: 30px;
-            gap: 45px;
-            
-            .botonGuardar{
-                button {
-                    --button_radius: 0.75em;
-                    --button_color: #FFC107;
-                    --button_outline_color: #000000;
-                    font-size: 17px;
-                    font-weight: bold;
-                    border: none;
-                    border-radius: var(--button_radius);
-                    background: var(--button_outline_color);
-                  padding: 0px;
-                  
-                  .button_top {
-                    display: block;
-                    box-sizing: border-box;
-                    border: 2px solid var(--button_outline_color);
-                    border-radius: var(--button_radius);
-                    padding: 0.75em 1.5em;
-                    background: var(--button_color);
-                    color: var(--button_outline_color);
-                    transform: translateY(-0.2em);
-                    transition: transform 0.1s ease;
-                  }
-                }
-                  
-                  button:hover .button_top {
-                    transform: translateY(-0.33em);
-                  }
-                  
-                  button:active .button_top {
-                    transform: translateY(0);
-                  }
+        
+    }
+    .botonesFormulario{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding-top: 30px;
+        gap: 45px;
+        align-self: flex-end;
+        
+        .botonGuardar{
+            button {
+                --button_radius: 0.75em;
+                --button_color: #FFC107;
+                --button_outline_color: #000000;
+                font-size: 17px;
+                font-weight: bold;
+                border: none;
+                border-radius: var(--button_radius);
+                background: var(--button_outline_color);
+              padding: 0px;
+              
+              .button_top {
+                display: block;
+                box-sizing: border-box;
+                border: 2px solid var(--button_outline_color);
+                border-radius: var(--button_radius);
+                padding: 0.75em 1.5em;
+                background: var(--button_color);
+                color: var(--button_outline_color);
+                transform: translateY(-0.2em);
+                transition: transform 0.1s ease;
+              }
             }
-            .botonEliminar{
-                button {
-                    --button_radius: 0.75em;
-                    --button_color: #FB5151;
-                    --button_outline_color: #000000;
-                    font-size: 17px;
-                    font-weight: bold;
-                    border: none;
-                    border-radius: var(--button_radius);
-                    background: var(--button_outline_color);
-                  padding: 0px;
-                  
-                  .button_top {
-                    display: block;
-                    box-sizing: border-box;
-                    border: 2px solid var(--button_outline_color);
-                    border-radius: var(--button_radius);
-                    padding: 0.75em 1.5em;
-                    background: var(--button_color);
-                    color: var(--button_outline_color);
-                    transform: translateY(-0.2em);
-                    transition: transform 0.1s ease;
-                  }
-                }
-                  
-                  button:hover .button_top {
-                    transform: translateY(-0.33em);
-                  }
-                  
-                  button:active .button_top {
-                    transform: translateY(0);
-                  }
-            }
-            
+              
+              button:hover .button_top {
+                transform: translateY(-0.33em);
+              }
+              
+              button:active .button_top {
+                transform: translateY(0);
+              }
         }
+        .botonEliminar{
+            button {
+                --button_radius: 0.75em;
+                --button_color: #FB5151;
+                --button_outline_color: #000000;
+                font-size: 17px;
+                font-weight: bold;
+                border: none;
+                border-radius: var(--button_radius);
+                background: var(--button_outline_color);
+              padding: 0px;
+              
+              .button_top {
+                display: block;
+                box-sizing: border-box;
+                border: 2px solid var(--button_outline_color);
+                border-radius: var(--button_radius);
+                padding: 0.75em 1.5em;
+                background: var(--button_color);
+                color: var(--button_outline_color);
+                transform: translateY(-0.2em);
+                transition: transform 0.1s ease;
+              }
+            }
+              
+              button:hover .button_top {
+                transform: translateY(-0.33em);
+              }
+              
+              button:active .button_top {
+                transform: translateY(0);
+              }
+        }
+        
     }
 }
 }

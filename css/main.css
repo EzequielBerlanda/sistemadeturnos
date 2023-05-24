@@ -15,13 +15,13 @@ header .lineaDivisor {
   background-color: #FFC107; }
 
 header .tituloHeaderSolicitarTurno {
-  height: 110px;
+  height: 50px;
   background-color: #A6A6A6;
   display: flex;
   justify-content: center;
   align-items: center; }
   header .tituloHeaderSolicitarTurno h1 {
-    font-size: 60px;
+    font-size: 32px;
     font-family: gothamMedium; }
 
 nav {
@@ -56,7 +56,8 @@ nav {
     nav .botonesNav a {
       color: #17191E;
       font-size: 2.1vh;
-      text-decoration: none; }
+      text-decoration: none;
+      font-family: gothamMedium; }
       nav .botonesNav a img {
         width: 25px;
         height: auto; }
@@ -85,57 +86,64 @@ main .solicitarTurno {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 116px; }
+    padding: 50px; }
     main .solicitarTurno .datosPaciente .tituloDatosPaciente {
       display: flex;
       align-self: start; }
       main .solicitarTurno .datosPaciente .tituloDatosPaciente h2 {
-        font-size: 40px;
+        font-size: 20px;
         font-family: gothamMedium; }
-    main .solicitarTurno .datosPaciente #formulario .datosFormulario {
-      display: grid;
-      grid-template-columns: repeat(2, 4fr);
-      gap: 40px; }
-      main .solicitarTurno .datosPaciente #formulario .datosFormulario p {
-        font-size: 25px;
-        color: #A6A6A6;
-        margin: 2px; }
-      main .solicitarTurno .datosPaciente #formulario .datosFormulario .field input {
-        background-color: #D9D9D9;
-        width: 22vw;
-        height: 3vw;
-        border: none;
-        border-radius: 10px;
-        font-size: 30px; }
-    main .solicitarTurno .datosPaciente #formulario .turnoFormulario {
-      display: grid;
-      grid-template-columns: repeat(2, 4fr);
-      gap: 40px; }
-      main .solicitarTurno .datosPaciente #formulario .turnoFormulario p {
-        font-size: 25px;
-        color: #A6A6A6;
-        margin: 2px; }
-      main .solicitarTurno .datosPaciente #formulario .turnoFormulario .field input {
-        background-color: #D9D9D9;
-        width: 22vw;
-        height: 3vw;
-        border: none;
-        border-radius: 10px;
-        font-size: 30px; }
-    main .solicitarTurno .datosPaciente #formulario .tituloTurnoPaciente {
+    main .solicitarTurno .datosPaciente #formulario {
       display: flex;
-      align-self: start;
-      padding-top: 97px; }
-      main .solicitarTurno .datosPaciente #formulario .tituloTurnoPaciente h2 {
-        font-size: 40px;
-        font-family: gothamMedium; }
-    main .solicitarTurno .datosPaciente #formulario .botonesFormulario {
+      flex-direction: row;
+      gap: 5rem; }
+      main .solicitarTurno .datosPaciente #formulario .todosLosInputsPaciente {
+        display: grid;
+        grid-template-columns: repeat(2, 4fr);
+        gap: 40px; }
+        main .solicitarTurno .datosPaciente #formulario .todosLosInputsPaciente p {
+          font-size: 16px;
+          color: #A6A6A6;
+          margin: 2px; }
+        main .solicitarTurno .datosPaciente #formulario .todosLosInputsPaciente .field input {
+          background-color: #D9D9D9;
+          width: 18vw;
+          height: 2vw;
+          border: none;
+          border-radius: 10px;
+          font-size: 16px; }
+      main .solicitarTurno .datosPaciente #formulario .turnoFormulario {
+        display: flex;
+        flex-direction: column; }
+        main .solicitarTurno .datosPaciente #formulario .turnoFormulario p {
+          font-size: 16px;
+          color: #A6A6A6;
+          margin: 2px; }
+        main .solicitarTurno .datosPaciente #formulario .turnoFormulario .field input {
+          background-color: #D9D9D9;
+          width: 18vw;
+          height: 2vw;
+          border: none;
+          border-radius: 10px;
+          font-size: 16px; }
+      main .solicitarTurno .datosPaciente #formulario .todosLosInputsTurno {
+        display: flex;
+        flex-direction: column;
+        gap: 40px; }
+      main .solicitarTurno .datosPaciente #formulario .tituloTurnoPaciente {
+        display: flex;
+        align-self: start; }
+        main .solicitarTurno .datosPaciente #formulario .tituloTurnoPaciente h2 {
+          font-size: 20px;
+          font-family: gothamMedium; }
+    main .solicitarTurno .datosPaciente .botonesFormulario {
       display: flex;
       flex-direction: row;
       justify-content: end;
       padding-top: 30px;
-      gap: 45px; }
-      main .solicitarTurno .datosPaciente #formulario .botonesFormulario .botonGuardar button {
+      gap: 45px;
+      align-self: flex-end; }
+      main .solicitarTurno .datosPaciente .botonesFormulario .botonGuardar button {
         --button_radius: 0.75em;
         --button_color: #FFC107;
         --button_outline_color: #000000;
@@ -145,7 +153,7 @@ main .solicitarTurno {
         border-radius: var(--button_radius);
         background: var(--button_outline_color);
         padding: 0px; }
-        main .solicitarTurno .datosPaciente #formulario .botonesFormulario .botonGuardar button .button_top {
+        main .solicitarTurno .datosPaciente .botonesFormulario .botonGuardar button .button_top {
           display: block;
           box-sizing: border-box;
           border: 2px solid var(--button_outline_color);
@@ -155,11 +163,11 @@ main .solicitarTurno {
           color: var(--button_outline_color);
           transform: translateY(-0.2em);
           transition: transform 0.1s ease; }
-      main .solicitarTurno .datosPaciente #formulario .botonesFormulario .botonGuardar button:hover .button_top {
+      main .solicitarTurno .datosPaciente .botonesFormulario .botonGuardar button:hover .button_top {
         transform: translateY(-0.33em); }
-      main .solicitarTurno .datosPaciente #formulario .botonesFormulario .botonGuardar button:active .button_top {
+      main .solicitarTurno .datosPaciente .botonesFormulario .botonGuardar button:active .button_top {
         transform: translateY(0); }
-      main .solicitarTurno .datosPaciente #formulario .botonesFormulario .botonEliminar button {
+      main .solicitarTurno .datosPaciente .botonesFormulario .botonEliminar button {
         --button_radius: 0.75em;
         --button_color: #FB5151;
         --button_outline_color: #000000;
@@ -169,7 +177,7 @@ main .solicitarTurno {
         border-radius: var(--button_radius);
         background: var(--button_outline_color);
         padding: 0px; }
-        main .solicitarTurno .datosPaciente #formulario .botonesFormulario .botonEliminar button .button_top {
+        main .solicitarTurno .datosPaciente .botonesFormulario .botonEliminar button .button_top {
           display: block;
           box-sizing: border-box;
           border: 2px solid var(--button_outline_color);
@@ -179,9 +187,9 @@ main .solicitarTurno {
           color: var(--button_outline_color);
           transform: translateY(-0.2em);
           transition: transform 0.1s ease; }
-      main .solicitarTurno .datosPaciente #formulario .botonesFormulario .botonEliminar button:hover .button_top {
+      main .solicitarTurno .datosPaciente .botonesFormulario .botonEliminar button:hover .button_top {
         transform: translateY(-0.33em); }
-      main .solicitarTurno .datosPaciente #formulario .botonesFormulario .botonEliminar button:active .button_top {
+      main .solicitarTurno .datosPaciente .botonesFormulario .botonEliminar button:active .button_top {
         transform: translateY(0); }
 
 body {

@@ -54,8 +54,11 @@ turnero.forEach ((item) => {
   alert(nombre)
 } */
 
-function guardarPaciente(nombrePersona, edadPersona, direccionPersona){
-  this.nombre = nombrePersona;
-  this.edad = edadPersona;
-  this.direccion = direccionPersona;
+function guardarPaciente(nombre, apellido, documento, email, direccion, telefono, nacimiento, obrasocial, servicio, horario, abonado, pago){
+  let nombreP = document.getElementById("nombreForm").value;
+  this.nombreP = nombre;
 }
+
+const persona = new guardarPaciente();
+let nuevaLongitud = pacientes.push(persona);
+console.log(pacientes);
