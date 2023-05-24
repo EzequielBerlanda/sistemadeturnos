@@ -1,0 +1,281 @@
+header .tituloHeader {
+  display: flex;
+  align-items: center;
+  background-image: url(../multimedia/image1.png);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .tituloHeader h1 {
+  font-family: gothamMedium;
+  font-size: 90px;
+  padding: 50px;
+}
+header .lineaDivisor {
+  height: 10px;
+  background-color: #FFC107;
+}
+header .tituloHeaderSolicitarTurno {
+  height: 50px;
+  background-color: #A6A6A6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .tituloHeaderSolicitarTurno h1 {
+  font-size: 32px;
+  font-family: gothamMedium;
+}
+
+nav {
+  background-color: #ffc107;
+  height: 83px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 42px;
+  padding-right: 42px;
+  align-items: center;
+  text-decoration: none;
+}
+nav a {
+  text-decoration: none;
+}
+nav .logoEmpresaNav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+nav .logoEmpresaNav img {
+  width: 70px;
+  height: 70px;
+}
+nav .logoEmpresaNav p {
+  color: #684f03;
+  font-size: 4.2vh;
+  font-weight: 800;
+}
+nav .botonesNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 56px;
+  text-decoration: none;
+}
+nav .botonesNav a {
+  color: #17191e;
+  font-size: 2.1vh;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: gothamMedium;
+}
+nav .botonesNav a img {
+  width: 25px;
+  height: auto;
+  align-items: center;
+}
+
+main .mainHome {
+  background-color: #a6a6a6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 60px;
+}
+main .mainHome .left .horariosHome p {
+  font-size: 32px;
+}
+main .mainHome .right {
+  display: flex;
+  flex-direction: column;
+}
+main .mainHome .right .turnosHome p {
+  font-size: 32px;
+}
+main .mainHome .right .fechaHome p {
+  font-size: 32px;
+}
+main .solicitarTurno {
+  display: flex;
+  justify-content: center;
+}
+main .solicitarTurno .datosPaciente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+main .solicitarTurno .datosPaciente .tituloDatosPaciente {
+  display: flex;
+  align-self: start;
+}
+main .solicitarTurno .datosPaciente .tituloDatosPaciente h2 {
+  font-size: 20px;
+  font-family: gothamMedium;
+}
+main .solicitarTurno .datosPaciente #formulario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+main .solicitarTurno .datosPaciente #formulario .todosLosInputsPaciente {
+  display: grid;
+  grid-template-columns: repeat(2, 4fr);
+  gap: 40px;
+}
+main .solicitarTurno .datosPaciente #formulario .todosLosInputsPaciente p {
+  font-size: 16px;
+  color: #a6a6a6;
+  margin: 2px;
+}
+main .solicitarTurno .datosPaciente #formulario .todosLosInputsPaciente .field input {
+  background-color: #d9d9d9;
+  width: 18vw;
+  height: 2vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+main .solicitarTurno .datosPaciente #formulario .turnoFormulario {
+  display: flex;
+  flex-direction: column;
+}
+main .solicitarTurno .datosPaciente #formulario .turnoFormulario p {
+  font-size: 16px;
+  color: #a6a6a6;
+  margin: 2px;
+}
+main .solicitarTurno .datosPaciente #formulario .turnoFormulario .field input {
+  background-color: #d9d9d9;
+  width: 18vw;
+  height: 2vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+main .solicitarTurno .datosPaciente #formulario .todosLosInputsTurno {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+main .solicitarTurno .datosPaciente #formulario .tituloTurnoPaciente {
+  display: flex;
+  align-self: start;
+}
+main .solicitarTurno .datosPaciente #formulario .tituloTurnoPaciente h2 {
+  font-size: 20px;
+  font-family: gothamMedium;
+}
+main .solicitarTurno .datosPaciente .botonesFormulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-top: 30px;
+  gap: 30px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+main .solicitarTurno .datosPaciente .botonesFormulario .botonGuardar button {
+  --button_radius: 0.75em;
+  --button_color: #ffc107;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+  padding: 0px;
+}
+main .solicitarTurno .datosPaciente .botonesFormulario .botonGuardar button .button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 8px 49px;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+main .solicitarTurno .datosPaciente .botonesFormulario .botonGuardar button:hover .button_top {
+  transform: translateY(-0.33em);
+  cursor: pointer;
+}
+main .solicitarTurno .datosPaciente .botonesFormulario .botonGuardar button:active .button_top {
+  transform: translateY(0);
+}
+main .solicitarTurno .datosPaciente .botonesFormulario .botonEliminar button {
+  --button_radius: 0.75em;
+  --button_color: #fc2b2b;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+  padding: 0px;
+}
+main .solicitarTurno .datosPaciente .botonesFormulario .botonEliminar button .button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 8px 49px;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+main .solicitarTurno .datosPaciente .botonesFormulario .botonEliminar button:hover .button_top {
+  transform: translateY(-0.33em);
+  cursor: pointer;
+}
+main .solicitarTurno .datosPaciente .botonesFormulario .botonEliminar button:active .button_top {
+  transform: translateY(0);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: gotham;
+}
+
+input {
+  font-family: gotham;
+  color: #17191e;
+}
+
+input:focus {
+  outline: 1px solid #ffc107;
+}
+
+::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+.vl {
+  border-left: 1px solid #ffc107;
+  height: 200px;
+}
+
+@font-face {
+  font-family: gotham;
+  src: url(../fontsfamily/GothamBook.otf);
+}
+@font-face {
+  font-family: gothamRegular;
+  src: url(../fontsfamily/GothamRegular.otf);
+}
+@font-face {
+  font-family: gothamMedium;
+  src: url(../fontsfamily/GothamMedium.otf);
+}/*# sourceMappingURL=style.css.map */

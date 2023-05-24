@@ -1,24 +1,38 @@
-@import 'header';
-@import 'nav';
-@import 'main';
-@import 'footer';
-@import 'responsive';
+@import "header";
+@import "nav";
+@import "main";
+@import "footer";
+@import "responsive";
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: gotham;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: gotham;
+}
+input {
+  font-family: gotham;
+  color: #17191e;
+}
+input:focus {
+  outline: 1px solid #ffc107;
+}
+::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+.vl {
+  border-left: 1px solid #ffc107;
+  height: 200px;
 }
 
 @font-face {
-    font-family: gotham;
-    src: url(../fontsfamily/GothamBook.otf);
+  font-family: gotham;
+  src: url(../fontsfamily/GothamBook.otf);
 }
 @font-face {
-    font-family: gothamRegular;
-    src: url(../fontsfamily/GothamRegular.otf);
+  font-family: gothamRegular;
+  src: url(../fontsfamily/GothamRegular.otf);
 }
 @font-face {
-    font-family: gothamMedium;
-    src: url(../fontsfamily/GothamMedium.otf);
+  font-family: gothamMedium;
+  src: url(../fontsfamily/GothamMedium.otf);
 }
