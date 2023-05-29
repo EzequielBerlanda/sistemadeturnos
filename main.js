@@ -49,16 +49,71 @@ turnero.forEach ((item) => {
     contenedor.append(div);
 }); */
 
-/* function guardarPaciente (){
-  let nombre = document.getElementById("nombreForm").value
-  alert(nombre)
-} */
 
-function guardarPaciente(nombre, apellido, documento, email, direccion, telefono, nacimiento, obrasocial, servicio, horario, abonado, pago){
-  let nombreP = document.getElementById("nombreForm").value;
-  this.nombreP = nombre;
-}
+const guardarStorage = (clave, valor) => {
+  localStorage.setItem(`pacientes`, JSON.stringify(pacientes));
+};
 
-const persona = new guardarPaciente();
-let nuevaLongitud = pacientes.push(persona);
-console.log(pacientes);
+const btnGuardar = document.querySelector("#btnGuardar");
+const pacientes = [];
+btnGuardar.addEventListener("click", function () {
+  let nombreP = document.querySelector("#nombreForm").value;
+  let apellidoP = document.querySelector("#apellidoForm").value;
+  let documentoP = document.querySelector("#documentoForm").value;
+  let emailP = document.querySelector("#emailForm").value;
+  let direccionP = document.querySelector("#direccionForm").value;
+  let telefonoP = document.querySelector("#telefonoForm").value;
+  let nacimientoP = document.querySelector("#nacimientoForm").value;
+  let obrasocialP = document.querySelector("#obrasocialForm").value;
+  let servicioP = document.querySelector("#servicioForm").value;
+  let horarioP = document.querySelector("#horarioForm").value;
+  let abonadoP = document.querySelector("#abonadoForm").value;
+  let metpagoP = document.querySelector("#metpagoForm").value;
+
+  function guardarPaciente(
+    nombre,
+    apellido,
+    documento,
+    email,
+    direccion,
+    telefono,
+    nacimiento,
+    obrasocial,
+    servicio,
+    horario,
+    abonado,
+    metpago
+  ) {
+    this.nombreP = nombre;
+    this.apellidoP = apellido;
+    this.documentoP = documento;
+    this.emailP = email;
+    this.direccionP = direccion;
+    this.telefonoP = telefono;
+    this.nacimientoP = nacimiento;
+    this.obrasocialP = obrasocial;
+    this.servicioP = servicio;
+    this.horarioP = horario;
+    this.abonadoP = abonado;
+    this.metpagoP = metpago;
+  }
+
+  
+  let persona = new guardarPaciente(nombreP, apellidoP, documentoP, emailP, direccionP, telefonoP, nacimientoP, obrasocialP, servicioP, horarioP, abonadoP, metpagoP);
+  pacientes.push(persona);
+  console.log(pacientes);
+
+  pacientes.forEach(item =>{
+    guardarStorage(item.id, JSON.stringify(item));
+  }); 
+  console.log(localStorage);
+
+  let ObjetoPacientes = localStorage.getItem(`ObjetoPacientes`);
+console.log(ObjetoPacientes);
+ObjetoPacientes = JSON.parse(ObjetoPacientes)
+console.log(ObjetoPacientes);
+});
+
+
+
+ 
