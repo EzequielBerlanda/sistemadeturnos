@@ -49,6 +49,7 @@ turnero.forEach ((item) => {
     contenedor.append(div);
 }); */
 
+  
 
 const guardarStorage = (clave, valor) => {
   localStorage.setItem(`pacientes`, JSON.stringify(pacientes));
@@ -108,12 +109,10 @@ btnGuardar.addEventListener("click", function () {
   }); 
   console.log(localStorage);
 
-  let ObjetoPacientes = localStorage.getItem(`ObjetoPacientes`);
+
+ObjetoPacientes = JSON.parse(localStorage.getItem(`pacientes`))
 console.log(ObjetoPacientes);
-ObjetoPacientes = JSON.parse(ObjetoPacientes)
-console.log(ObjetoPacientes);
+
 });
 
 
-
- 
