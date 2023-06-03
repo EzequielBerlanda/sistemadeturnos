@@ -17,8 +17,8 @@
         </div>
         <div class="botonesNav">
           <a href="./solicitarturno.html">Solicitar turno</a>
-          <a href="">Ver turnos</a>
-          <a href="">Profesionales</a>
+          <a href="./verturnos.html">Ver turnos</a>
+          <a href="./profesionales.html">Profesionales</a>
           <a href="">Usuarios</a>
           <a href=""><img src="../multimedia/Puerta.svg" alt="" /></a>
         </div>
@@ -134,8 +134,8 @@
                     />
                   </div>
                 </div>
-                <div class="horarioPaciente">
-                  <p>Horario:</p>
+                <div class="profesionalPaciente">
+                  <p>Profesional:</p>
                   <div class="field">
                     <input
                       type="text"
@@ -145,8 +145,8 @@
                     />
                   </div>
                 </div>
-                <div class="abonadoPaciente">
-                  <p>Abonado:</p>
+                <div class="fechayhoraPaciente">
+                  <p>Fecha y horario:</p>
                   <div class="field">
                     <input
                       type="text"
@@ -159,12 +159,23 @@
                 <div class="metpagoPaciente">
                   <p>Metodo de pago:</p>
                   <div class="field">
-                    <input
+                    <!-- <input
                       type="text"
                       name="metpago"
                       required
                       id="metpagoForm"
-                    />
+                    /> -->
+                    <div class="dropdown">
+                      <div class="select">
+                        <span class="selected">Tarjeta debito</span>
+                        <div class="caret"></div>
+                      </div>
+                      <ul class="menu">
+                        <li>Transferencia</li>
+                        <li>Tarjeta credito</li>
+                        <li class="active">Tarjeta debito</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>

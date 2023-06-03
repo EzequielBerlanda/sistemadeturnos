@@ -1,3 +1,25 @@
+:root {
+  --shadow-color: 0deg 0% 45%;
+  --shadow-elevation-low: -1px 1px 1.1px hsl(var(--shadow-color) / 1),
+    -1.5px 1.5px 1.6px -2.5px hsl(var(--shadow-color) / 0.69),
+    -5px 5px 5.3px -5px hsl(var(--shadow-color) / 0.35);
+  --shadow-elevation-medium: -1px 1px 1.1px hsl(var(--shadow-color) / 0.88),
+    -1.4px 1.4px 1.5px -1.2px hsl(var(--shadow-color) / 0.7),
+    -4px 4px 4.2px -2.5px hsl(var(--shadow-color) / 0.52),
+    -11.1px 11.1px 11.8px -3.7px hsl(var(--shadow-color) / 0.35),
+    -25px 25px 26.5px -5px hsl(var(--shadow-color) / 0.17);
+  --shadow-elevation-high: -1px 1px 1.1px hsl(var(--shadow-color) / 0.81),
+    -1.2px 1.2px 1.3px -0.6px hsl(var(--shadow-color) / 0.73),
+    -2.6px 2.6px 2.8px -1.1px hsl(var(--shadow-color) / 0.65),
+    -6.5px 6.5px 6.9px -1.7px hsl(var(--shadow-color) / 0.57),
+    -14.1px 14.1px 15px -2.2px hsl(var(--shadow-color) / 0.49),
+    -26.5px 26.5px 28.1px -2.8px hsl(var(--shadow-color) / 0.41),
+    -45.1px 45.1px 47.8px -3.3px hsl(var(--shadow-color) / 0.33),
+    -71.1px 71.1px 75.4px -3.9px hsl(var(--shadow-color) / 0.24),
+    -105.6px 105.6px 112px -4.4px hsl(var(--shadow-color) / 0.16),
+    -150px 150px 159.1px -5px hsl(var(--shadow-color) / 0.08);
+}
+
 main {
   .mainHome {
     background-color: #a6a6a6;
@@ -97,6 +119,82 @@ main {
           display: flex;
           flex-direction: column;
           gap: 40px;
+          .metpagoPaciente {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            .dropdown {
+              width: 100%;
+              position: relative;
+              * {
+                box-sizing: border-box;
+              }
+              .select {
+                background: #d9d9d9;
+                color: #000;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 2px #979797 transparent;
+                border-radius: 0.5em;
+                height: 2vw;
+                padding-left: 10px;
+                padding-right: 10px;
+                cursor: pointer;
+                transition: background 0.3s;
+              }
+
+              .select:hover {
+                background: #979797;
+              }
+              .caret {
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 6px solid #000;
+                transition: 0.3s;
+              }
+              .caret-rotate {
+                transform: rotate(180deg);
+              }
+              .menu {
+                list-style: none;
+                padding: 0.2em 0.5em;
+                background: #d9d9d9;
+                border: 1px #d9d9d9 solid;
+                box-shadow: var(--shadow-elevation-medium);
+                border-radius: 0.5em;
+                color: #000;
+                position: absolute;
+                top: 3em;
+                left: 50%;
+                width: 100%;
+                transform: translateX(-50%);
+                opacity: 0;
+                display: none;
+                transition: 0.2s;
+                z-index: 1;
+                li {
+                  padding: 0.7em 0.5em;
+                  margin: 0.3em 0;
+                  border-radius: 0.5em;
+                  cursor: pointer;
+                  &:hover {
+                    background: #979797;
+                  }
+                }
+                .active {
+                  background: #979797;
+                }
+              }
+              .menu-open {
+                display: block;
+                opacity: 1;
+              }
+            }
+          }
         }
         .tituloTurnoPaciente {
           display: flex;
@@ -187,4 +285,134 @@ main {
       }
     }
   }
+
+
+
+  .mainVerTurnos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .firstVerTurno{
+      padding-top: 50px;
+      .titleVerTurnos{
+        display: flex;
+        justify-content: start;
+        p{
+          font-size: 24px;
+          font-weight: 600;
+          color: #A6A6A6;
+        }
+      }
+      .buscadorVerTurnos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        input{
+          background: #D9D9D9;
+          padding: 10px;
+          width: 1000px;
+          border: none;
+          border-radius: 10px;
+        }
+      }
+    }
+    .secondVerTurno{
+      margin-top: 50px;
+      box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      .datosVerTurnos{
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+        box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.25);
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 0px 25px;
+        p{
+          color: #A6A6A6;
+          font-size: 16px;
+          font-weight: 600;
+          margin: 0px;
+        }
+      }
+    }
+    
+  }
+
+
+
+
+  .mainProfesionales{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .firstProfesionales{
+      padding-top: 50px;
+      .titleProfesionales{
+        display: flex;
+        justify-content: start;
+        p{
+          font-size: 24px;
+          font-weight: 600;
+          color: #A6A6A6;
+        }
+      }
+      .buscadorProfesionales{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        input{
+          background: #D9D9D9;
+          padding: 10px;
+          width: 1000px;
+          border: none;
+          border-radius: 10px;
+        }
+      }
+      .botonAgregarProfesional{
+        margin-top: 40px;
+        button{
+          background: #FFC107;
+          color: #17191E;
+          padding: 6px 25px;
+          font-size: 16px;
+          font-weight: 600;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+        }
+          button:hover{
+            background: #e0a800;
+          }
+        
+      }
+    }
+    .secondProfesionales{
+      margin-top: 50px;
+      box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      .datosProfesionales{
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+        box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.25);
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 0px 25px;
+        p{
+          color: #A6A6A6;
+          font-size: 16px;
+          font-weight: 600;
+          margin: 0px;
+        }
+      }
+      
+    }
+    
+  }
+
+
+
 }
