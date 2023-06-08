@@ -336,6 +336,21 @@ main {
           margin: 0px;
         }
       }
+      .detallesPaciente{
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+        padding: 0px 25px;
+        .datosPaciente{
+          display: flex;
+          flex-direction: row;
+          gap: 200px;
+          p{
+            
+          }
+          
+        }
+      }
     }
     
   }

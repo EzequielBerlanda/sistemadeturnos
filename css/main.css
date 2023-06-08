@@ -330,6 +330,15 @@ main .mainVerTurnos {
         font-size: 16px;
         font-weight: 600;
         margin: 0px; }
+    main .mainVerTurnos .secondVerTurno .detallesPaciente {
+      display: flex;
+      flex-direction: row;
+      gap: 200px;
+      padding: 0px 25px; }
+      main .mainVerTurnos .secondVerTurno .detallesPaciente .datosPaciente {
+        display: flex;
+        flex-direction: row;
+        gap: 200px; }
 
 main .mainProfesionales {
   display: flex;

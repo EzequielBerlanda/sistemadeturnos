@@ -49,27 +49,40 @@ turnero.forEach ((item) => {
     contenedor.append(div);
 }); */
 
-  
+
 
 const guardarStorage = (clave, valor) => {
   localStorage.setItem(`pacientes`, JSON.stringify(pacientes));
 };
 
+let nombreP = "";
+let apellidoP = "";
+let documentoP = "";
+let emailP = "";
+let direccionP = "";
+let telefonoP = "";
+let nacimientoP = "";
+let obrasocialP = "";
+let servicioP = "";
+let profesionalP = "";
+let fechahoraP = "";
+let metpagoP = "";
+
 const btnGuardar = document.querySelector("#btnGuardar");
 const pacientes = [];
 btnGuardar.addEventListener("click", function () {
-  let nombreP = document.querySelector("#nombreForm").value;
-  let apellidoP = document.querySelector("#apellidoForm").value;
-  let documentoP = document.querySelector("#documentoForm").value;
-  let emailP = document.querySelector("#emailForm").value;
-  let direccionP = document.querySelector("#direccionForm").value;
-  let telefonoP = document.querySelector("#telefonoForm").value;
-  let nacimientoP = document.querySelector("#nacimientoForm").value;
-  let obrasocialP = document.querySelector("#obrasocialForm").value;
-  let servicioP = document.querySelector("#servicioForm").value;
-  let horarioP = document.querySelector("#horarioForm").value;
-  let abonadoP = document.querySelector("#abonadoForm").value;
-  let metpagoP = document.querySelector("#metpagoForm").value;
+  nombreP = document.querySelector("#nombreForm").value;
+  apellidoP = document.querySelector("#apellidoForm").value;
+  documentoP = document.querySelector("#documentoForm").value;
+  emailP = document.querySelector("#emailForm").value;
+  direccionP = document.querySelector("#direccionForm").value;
+  telefonoP = document.querySelector("#telefonoForm").value;
+  nacimientoP = document.querySelector("#nacimientoForm").value;
+  obrasocialP = document.querySelector("#obrasocialForm").value;
+  servicioP = document.querySelector("#servicioForm").value;
+  profesionalP = document.querySelector("#horarioForm").value;
+  fechahoraP = document.querySelector("#abonadoForm").value;
+  metpagoP = document.querySelector("#metpagoForm").value;
 
   function guardarPaciente(
     nombre,
@@ -81,8 +94,8 @@ btnGuardar.addEventListener("click", function () {
     nacimiento,
     obrasocial,
     servicio,
-    horario,
-    abonado,
+    profesional,
+    fechahora,
     metpago
   ) {
     this.nombreP = nombre;
@@ -94,13 +107,13 @@ btnGuardar.addEventListener("click", function () {
     this.nacimientoP = nacimiento;
     this.obrasocialP = obrasocial;
     this.servicioP = servicio;
-    this.horarioP = horario;
-    this.abonadoP = abonado;
+    this.profesionalP = profesional;
+    this.fechahoraP = fechahora;
     this.metpagoP = metpago;
   }
 
   
-  let persona = new guardarPaciente(nombreP, apellidoP, documentoP, emailP, direccionP, telefonoP, nacimientoP, obrasocialP, servicioP, horarioP, abonadoP, metpagoP);
+  let persona = new guardarPaciente(nombreP, apellidoP, documentoP, emailP, direccionP, telefonoP, nacimientoP, obrasocialP, servicioP, profesionalP, fechahoraP, metpagoP);
   pacientes.push(persona);
   console.log(pacientes);
 
@@ -110,10 +123,10 @@ btnGuardar.addEventListener("click", function () {
   console.log(localStorage);
 
 
-ObjetoPacientes = JSON.parse(localStorage.getItem(`pacientes`));
-console.log(ObjetoPacientes);
+
 
 });
+
 
 
 
@@ -148,5 +161,4 @@ dropdowns.forEach((dropdown) => {
     });
   });
 });
-
 
