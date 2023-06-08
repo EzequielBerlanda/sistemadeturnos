@@ -32,17 +32,26 @@ nav {
     align-items: center;
     gap: 56px;
     text-decoration: none;
-    a {
-      color: #17191e;
-      font-size: 2.1vh;
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      font-family: gothamMedium;
-      img {
-        width: 25px;
-        height: auto;
+    li {
+      border-radius: 10px;
+      transition: 0.2s ease;
+      a {
+        color: #17191e;
+        font-size: 2.1vh;
+        display: flex;
         align-items: center;
+        text-decoration: none;
+        font-family: gothamMedium;
+        padding: 16px;
+
+        img {
+          width: 25px;
+          height: auto;
+          align-items: center;
+        }
+      }
+      &:hover {
+        background-color: #17191e1e;
       }
     }
   }

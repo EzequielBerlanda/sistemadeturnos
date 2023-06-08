@@ -49,8 +49,6 @@ turnero.forEach ((item) => {
     contenedor.append(div);
 }); */
 
-
-
 const guardarStorage = (clave, valor) => {
   localStorage.setItem(`pacientes`, JSON.stringify(pacientes));
 };
@@ -112,25 +110,28 @@ btnGuardar.addEventListener("click", function () {
     this.metpagoP = metpago;
   }
 
-  
-  let persona = new guardarPaciente(nombreP, apellidoP, documentoP, emailP, direccionP, telefonoP, nacimientoP, obrasocialP, servicioP, profesionalP, fechahoraP, metpagoP);
+  let persona = new guardarPaciente(
+    nombreP,
+    apellidoP,
+    documentoP,
+    emailP,
+    direccionP,
+    telefonoP,
+    nacimientoP,
+    obrasocialP,
+    servicioP,
+    profesionalP,
+    fechahoraP,
+    metpagoP
+  );
   pacientes.push(persona);
   console.log(pacientes);
 
-  pacientes.forEach(item =>{
+  pacientes.forEach((item) => {
     guardarStorage(item.id, JSON.stringify(item));
-  }); 
+  });
   console.log(localStorage);
-
-
-
-
 });
-
-
-
-
-
 
 // MENU SELECT MP
 const dropdowns = document.querySelectorAll(".dropdown");
@@ -161,4 +162,3 @@ dropdowns.forEach((dropdown) => {
     });
   });
 });
-
